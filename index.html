@@ -10,6 +10,7 @@
       body {
         font-family: "Open Sans", sans-serif;
         margin: 0;
+        font-size: 18px;
       }
       body.letters {
         background-color: #b4b2bd;
@@ -45,18 +46,30 @@
         transform: translate(-50%, -40%);
         text-transform: uppercase;
         font-weight: 800;
-        font-size: 48px;
+        font-size: 5em;
+        width: calc(100% - 40px);
+        text-align: center;
       }
 
       #button {
         position: absolute;
-        top: 50%;
+        top: calc(40% + 8em);
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 18px;
         padding: 10px 40px;
         cursor: pointer;
         border: 1px solid black;
+      }
+
+      #credit {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 14px;
+      }
+      #credit a {
+        color: #000000;
       }
     </style>
   </head>
@@ -81,6 +94,10 @@
     </div>
     <div id="result"></div>
     <div id="button" onclick="updateResult()">un autre</div>
+    <div id="credit">
+      built by
+      <a href="https://github.com/suhmantha1" target="_blank">samantha moxam</a>
+    </div>
     <script type="text/javascript">
       var nombres = [
         "zéro",
