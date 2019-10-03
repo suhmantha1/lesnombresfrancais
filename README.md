@@ -2,4 +2,4 @@
 
 Random number generator to practice french numbers
 
-lesnombresfrancais.netlify.com
+les-nombres-francais.netlify.com
